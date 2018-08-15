@@ -9,16 +9,16 @@ import PropTypes from "prop-types";
 const Hello = ({ name }) => <h3>Hello from {name}!</h3>;
 
 Hello.defaultProps = {
-  name: "David"
+  name: "David",
 };
 
 Hello.propTypes = {
-  name: PropTypes.string
+  name: PropTypes.string,
 };
 
 document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(
     <Hello name="React" />,
-    document.body.children[0].appendChild(document.createElement("div"))
+    document.body.children[0].appendChild(document.createElement("div")),
   );
 });

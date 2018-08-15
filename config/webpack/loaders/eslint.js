@@ -1,10 +1,10 @@
 module.exports = {
-  enforce: 'pre',
+  enforce: "pre",
   test: /\.jsx?$/,
   exclude: /node_modules/,
-  loader: 'eslint-loader',
+  loader: "eslint-loader",
   options: {
-    cache: true,
+    cache: false,
     failOnWarning: true,
   },
 };
