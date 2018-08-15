@@ -7,7 +7,10 @@
     "rules": {
         "prettier/prettier": ["error"],
         "react/jsx-one-expression-per-line": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/anchor-is-valid": "off",
         "quotes": ["off", "double"],
+        "no-console": "off",
         "comma-dangle": ["error",
             {
                 "arrays": "always-multiline",

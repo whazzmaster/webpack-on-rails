@@ -1,0 +1,14 @@
+.todoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+
+  input { margin: 0; }
+}
+
+.noTodos {
+  padding: 10px 10px;
+  text-align: center;
+  color: #ccc;
+}

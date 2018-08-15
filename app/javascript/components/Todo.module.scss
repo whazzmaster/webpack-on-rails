@@ -1,0 +1,23 @@
+.todo {
+  padding: 10px 10px;
+  border-bottom: 1px dashed #666;
+
+  input[type=checkbox] {
+    font-size: 120%;
+    margin-right: 10px;
+  }
+
+  &:last-child { border-bottom: none; }
+  &:hover { background-color: lightyellow; }
+
+  a {
+    float: right;
+    cursor: pointer;
+  }
+}
+
+.completed {
+  text-decoration: line-through;
+  font-style: italic;
+  color: #ddd;
+}
