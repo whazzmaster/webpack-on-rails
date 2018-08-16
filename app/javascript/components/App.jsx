@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import { hot } from "react-hot-loader";
 import { v4 as uuid } from "uuid";
 
 import TodoForm from "./TodoForm";
@@ -68,4 +69,4 @@ class App extends PureComponent {
   }
 }
 
-export default App;
+export default hot(module)(App);
