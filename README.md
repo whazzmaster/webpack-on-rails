@@ -1,24 +1,56 @@
-# README
+# Webpack on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails 5.2 application using webpack + react, with examples on how to enable
+linting via eslint and hot module replacement for React and CSS.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+Clone the repo
 
-* System dependencies
+```bash
+$ git clone git@github.com:whazzmaster/webpack-on-rails.git
+$ cd webpack-on-rails
+```
 
-* Configuration
+Install dependencies
 
-* Database creation
+```bash
+$ brew install yarn
+$ bundle install
+$ yarn install
+```
 
-* Database initialization
+## Following Along
 
-* How to run the test suite
+Start the rails server and webpack-dev-server in **two different terminal windows**.
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+$ rails server # in one terminal
+$ ./bin/webpack-dev-server # in another terminal
+```
 
-* Deployment instructions
+Now you can check out various tags and diff between them or other commits to
+see what changed to enable the functionality. **Note** that you may need to
+restart `webpack-dev-server` when checking out various commits as it won't
+pick up certain configuration changes automatically.
 
-* ...
+Below are the relevant git tags you may jump to in the repo.
+
+- `1-generated-structure`
+- `2-integrate-javascript-packs`
+- `3-configures-eslint`
+- `4-fixes-eslint`
+- `5-develops-application`
+- `6-hot-reloading`
+
+To check one out, use:
+
+```bash
+$ git co 1-generated-structure
+```
+
+To diff between them, use:
+
+```bash
+$ git diff 1-generated-structure 2-integrate-javascript-packs
+```
